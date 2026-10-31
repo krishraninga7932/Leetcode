@@ -45,3 +45,18 @@ console.log("Single Number:", singleNumber(nums2));
 let nums3 = [1];
 console.log("Single Number:", singleNumber(nums3));
 // Expected Output: 1
+
+
+
+// OR===============================
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var singleNumber = function(nums) {
+    let result=0
+    for(let i=0;i<nums.length;i++){
+        result^=nums[i]
+    }
+    return result
+};
