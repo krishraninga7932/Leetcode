@@ -3,30 +3,31 @@ let nums = [2, 2, 3, 1];
 
 let first = -Infinity;
 
-for (let i = 0; i < nums.length; i++) {
-    if (nums[i] > first) {
-        first = nums[i];
+for(let i=0;i<nums.length;i++){
+    if(nums[i]>first){
+        first=nums[i]
     }
 }
 
-let sec = -Infinity;
+let second = -Infinity;
 
-for (let i = 0; i < nums.length; i++) {
-    if (nums[i] < first && nums[i] > sec) {
-        sec = nums[i];
+for(let i=0;i<nums.length;i++){
+    if(nums[i]<first && second<nums[i]){
+        second=nums[i]
     }
 }
 
 let third = -Infinity;
 
-for (let i = 0; i < nums.length; i++) {
-    if (nums[i] < sec && nums[i] > third) {
-        third = nums[i];
+for(let i=0;i<nums.length;i++){
+    if(nums[i]<second && third<nums[i]){
+        third=nums[i]
     }
 }
 
-if (third === -Infinity) {
+if(third===-Infinity){
     console.log(first);
-} else {
+}
+else{
     console.log(third);
 }
