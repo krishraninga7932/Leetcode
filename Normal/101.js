@@ -1,25 +1,22 @@
 
 let str = "I love javascript programming";
 
-let longest = 0;
+let longest = "";
 let word = "";
 
-for(let i = 0; i < str.length; i++){
-
-    if(str[i] !== " "){
-        word += str[i];
+for(let i =0;i<str.length;i++){
+    if(str[i]!==" "){
+        word+=str[i]
     }else{
-        if(word.length > longest){
-            longest = word.length;
+        if(word.length>longest.length){
+            longest=word
         }
-
-        word = "";
+        word=""
     }
 }
-
-// Last word comparison
-if(word.length > longest){
-    longest = word.length;
+if(word.length>longest.length){
+    longest=word
 }
 
 console.log(longest);
+
